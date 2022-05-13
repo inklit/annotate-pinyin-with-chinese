@@ -37,18 +37,18 @@
 
   const createRubyNode = (character: string, pinyin: string) => {
     const ruby = document.createElement('ruby');
-    const leftRP = document.createElement('rp');
-    const rightRP = document.createElement('rp');
-    const rt = document.createElement('rt');
-    const characterNode = document.createTextNode(character);
-    leftRP.textContent = '(';
-    rightRP.textContent = ')';
-    rt.textContent = pinyin;
-    rt.style.userSelect = 'none';
+   // const leftRP = document.createElement('rp');
+   // const rightRP = document.createElement('rp');
+   // const rt = document.createElement('rt');
+    const characterNode = document.createTextNode(pinyin);
+  //  leftRP.textContent = '(';
+  //  rightRP.textContent = ')';
+  //  rt.textContent = pinyin;
+   // rt.style.userSelect = 'none';
     ruby.appendChild(characterNode);
-    ruby.appendChild(leftRP);
-    ruby.appendChild(rt);
-    ruby.appendChild(rightRP);
+  //  ruby.appendChild(leftRP);
+  //  ruby.appendChild(rt);
+  //  ruby.appendChild(rightRP);
     return ruby;
   };
 
